@@ -23,7 +23,7 @@ This task is very straightforward: information flows from the button ...
 const clicks = Kefir.fromEvents($("#increment"), "click");
 ```
 
-to the text.
+... to the text.
 
 ```js
 const sums = clicks.scan((sum, _) => sum + 1, 0);
