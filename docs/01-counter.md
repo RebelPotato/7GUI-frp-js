@@ -4,23 +4,23 @@
 
 The first thing is to create the form.
 
-``` html
+```html
 <div id="counter">
-    <input id="value" type="text" value="0" style="width: 4rem;" readonly />
-    <button id="increment" style="width: 4rem;">count</button>
+  <input id="value" type="text" value="0" style="width: 4rem;" readonly />
+  <button id="increment" style="width: 4rem;">count</button>
 </div>
 ```
 
 Next, a simple utility function for DOM operations.
 
 ```js
-const $ = selector => document.querySelector(selector);
+const $ = (selector) => document.querySelector(selector);
 ```
 
 This task is very straightforward: information flows from the button ...
 
 ```js
-const clicks = Kefir.fromEvents($('#increment'), 'click');
+const clicks = Kefir.fromEvents($("#increment"), "click");
 ```
 
 to the text.
@@ -31,8 +31,8 @@ const sums = clicks.scan((sum, _) => sum + 1, 0);
 
 And the text needs to updated only when a new value is received.
 
-``` js
-sums.onValue(sum => {$('#value').value = sum});
+```js
+sums.onValue(sum => { $("#value").value = sum });
 ```
 
 Four lines of code and we're done.

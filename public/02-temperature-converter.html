@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/kefir@3.8.8/dist/kefir.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>FRP -> Temperature Converter</title>
+    <style>
+      #converter {
+        padding: 0.5rem 1rem;
+        margin-bottom: 2rem;
+        border: 1px solid #ddd;
+        background-color: #eee;
+        box-shadow: #ddd 0 0 0.5rem;
+        border-radius: 0.25rem;
+
+        display: flex;
+        gap: 1rem;
+
+        width: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Temperature Converter</h1>
+    </header>
+    <main>
+      <div id="converter">
+        <input type="number" id="celsius" />
+        <span> Celsius <strong>=</strong> </span>
+        <input type="number" id="fahrenheit" />
+        <span> Farenheit</span>
+      </div>
+      <article>
+        <p>
+          <em>Challenges:</em> bidirectional data flow, user-provided text
+          input.
+        </p>
+        <p class="left">
+          The task is to build a frame containing two textfields
+          <em>T<sub>C</sub></em> and <em>T<sub>F</sub></em> representing the
+          temperature in Celsius and Fahrenheit, respectively.
+        </p>
+        <figure class="right">
+          <img
+            src="https://eugenkiss.github.io/7guis/static/tempconv.de9aff1f.png"
+            class="css-a5rafi"
+          />
+        </figure>
+        <p>
+          Initially, both <em>T<sub>C</sub></em> and <em>T<sub>F</sub></em> are
+          empty. When the user enters a numerical value into
+          <em>T<sub>C</sub></em> the corresponding value in
+          <em>T<sub>F</sub></em> is automatically updated and vice versa. When
+          the user enters a non-numerical string into <em>T<sub>C</sub></em> the
+          value in <em>T<sub>F</sub></em> is <em>not</em> updated and vice
+          versa. The formula for converting a temperature <em>C</em> in Celsius
+          into a temperature <em>F</em> in Fahrenheit is
+          <em>C = (F - 32) * (5/9)</em> and the dual direction is
+          <em>F = C * (9/5) + 32</em>.
+        </p>
+        <p>
+          Temperature Converter increases the complexity of Counter by having
+          bidirectional data flow between the Celsius and Fahrenheit inputs and
+          the need to check the user input for validity. A good solution will
+          make the bidirectional dependency very clear with minimal boilerplate
+          code.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <hr />
+      <p><a href="https://github.com/RebelPotato/7GUI-frp-js">@github</a></p>
+    </footer>
+  </body>
+  <script src="02-temperature-converter.js"></script>
+</html>

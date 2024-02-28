@@ -39,6 +39,11 @@ h1 {
     font-size: 2rem;
 }
 
+ol {
+    list-style-type: upper-roman;
+    margin-left: 2rem;
+}
+
 main>article {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -55,6 +60,10 @@ main>article * {
 }
 
 main>article figure {
+    grid-column: 1/2;
+}
+
+main>article .left {
     grid-column: 1/2;
 }
 

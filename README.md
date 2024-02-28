@@ -11,8 +11,8 @@ Then, start from the beginning!
 ## Table of contents
 
 - [01-counter](./docs/01-counter.md)
-- 02-temperature-converter
-- 03-flight-booker
+- [02-temperature-converter](./docs/02-temperature-converter.md)
+- [03-flight-booker](./docs/03-flight-booker.md)
 - 04-timer
 - 05-CRUD
 - 06-circle-drawer
