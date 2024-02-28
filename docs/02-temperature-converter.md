@@ -1,6 +1,6 @@
 # 02: Temperature Converter
 
-> The task is to build a frame containing two textfields T~C~ and T~F~ representing the temperature in Celsius and Fahrenheit, respectively. Initially, both T~C~ and T~F~ are empty. When the user enters a numerical value into T~C~ the corresponding value in T~F~ is automatically updated and vice versa. When the user enters a non-numerical string into T~C~ the value in T~F~ is not updated and vice versa. The formula for converting a temperature C in Celsius into a temperature F in Fahrenheit is $C = (F - 32) \times \frac 5 9$ and the dual direction is $F = C \times \frac 9 5 + 32$.
+> The task is to build a frame containing two textfields T<sub>C</sub> and T<sub>F</sub> representing the temperature in Celsius and Fahrenheit, respectively. Initially, both T<sub>C</sub> and T<sub>F</sub> are empty. When the user enters a numerical value into T<sub>C</sub> the corresponding value in T<sub>F</sub> is automatically updated and vice versa. When the user enters a non-numerical string into T<sub>C</sub> the value in T<sub>F</sub> is not updated and vice versa. The formula for converting a temperature C in Celsius into a temperature F in Fahrenheit is $C = (F - 32) \times \frac 5 9$ and the dual direction is $F = C \times \frac 9 5 + 32$.
 
 Bidirectional relations are tricky. In this example, the relationship between the two states are very simple, so we can afford to store them in the element itself.
 
