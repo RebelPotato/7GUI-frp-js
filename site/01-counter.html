@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/kefir@3.8.8/dist/kefir.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Counter</title>
+    <style>
+#counter {
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+  background-color: #eee;
+  box-shadow: #ddd 0 0 0.5rem;
+  border-radius: 0.25rem;
+
+  display: flex;
+  gap: 1rem;
+
+  width: fit-content;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Counter</h1>
+    </header>
+    <main>
+      <div id="counter">
+        <input id="value" type="text" value="0" style="width: 4rem;" readonly />
+        <button id="increment" style="width: 4rem;">count</button>
+      </div>
+      <article>
+        <p>
+          <em>Challenge:</em> Understanding the basic ideas of a
+          language/toolkit.
+        </p>
+        <figure>
+          <img
+            src="https://eugenkiss.github.io/7guis/static/counter.9cd92091.png"
+            alt="A screenshot of a counter implemented in Java"
+          />
+        </figure>
+        <p class="right">
+          The task is to build a frame containing a label or read-only textfield
+          <em>T</em> and a button <em>B</em>. Initially, the value in
+          <em>T</em> is “0” and each click of <em>B</em> increases the value in
+          <em>T</em> by one.
+        </p>
+        <p>
+          Counter serves as a gentle introduction to the basics of the language,
+          paradigm and toolkit for one of the simplest GUI applications
+          imaginable. Thus, Counter reveals the required scaffolding and how the
+          very basic features work together to build a GUI application. A good
+          solution will have almost no scaffolding.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <hr>
+      <p><a href="https://github.com/RebelPotato/7GUI-frp-js">@github</a></p>
+    </footer>
+  </body>
+  <script src="01-counter.js"></script>
+</html>

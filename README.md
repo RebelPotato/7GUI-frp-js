@@ -1,8 +1,5 @@
 # 7 GUI examples, FRP style
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](./README.md)
-[![zh-Hans](https://img.shields.io/badge/lang-zh-Hans-red.svg)](./README.md)
-
 Here are [7 GUI](https://eugenkiss.github.io/7guis/) examples written in FRP (Functional Reactive Programming) style, in vanilla javascript.
 
 If you're new to this style, please read this [awesome introductory material](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) first. Totally worth it.
